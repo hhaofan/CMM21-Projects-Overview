@@ -1,5 +1,5 @@
 # CMM21-Projects-Overview
-This is a brief introduction to the 6 project I have done in the CMM course, given by ETH CRL group.
+This is a brief introduction to the projects I have done in the CMM course, given by ETH CRL group. All of the projects were written in C++.
 The most interesting contents of each project is listed below:
 
 
@@ -42,12 +42,12 @@ It is noticed that at the end of the inverse problem demo, the end of the bar is
 ## 3. Rigid body dynamics
 ### 3.1 Basic features 
 
-This task attains the feature of rigid body dynamics simulation. Under these three conditions, the motion of a rigid cube/some rigid cubes with some certain mass and MOI is simulated.
+This task attains the feature of rigid body dynamics simulation. Under these three conditions, the motion of a rigid cube/some rigid cubes with some certain mass and MOI is simulated. With the drag of the mouse, the external force can also be added to  the cube.
 * Projectile
 * Single spring
 * Double springs and double cubes 
 
-As you can see in the demo below, the simulation of the dynamics and kinematics process is very well.
+As you can see in the demo below, the simulation of the dynamics and kinematics process is very well and stable.
 ![](images/a5-demo1.gif)
 *Figure 6: Dynamics of the cube under different situations: 1. Projectile, 2. Single Spring, 3. Double Springs*
 
@@ -58,7 +58,10 @@ After finishing the basic dynamics simulation, the basics contact simulation is 
 *Figure 7: Dynamics simulation with contact under different epsilon of restitution coefficient*
 
 ## 4. Trajectory Optimization
-In this task, a trajectory optimization problem is attained. Given a specific intial position and velocity, a satellite can precisely program its driving policy and land at the target with or without the influence of an added gravity field. The established policy also works under arbitary initial position and velocity. Apart from that, a target circular motion problem is also achieved. After the optimization, the satellite can converge to the orbit around another planet precisely just by the gravity which it is bearing.
+In this task, a trajectory optimization problem is attained. To be specific, the following two features are attained.
+* Trajectory optimization from point to point, with/ without the disturbance of the gravity from a planet. This task can be attained regardless of the initial velocity and position.
+* Trajectory optimization from point to orbit. The satellite can converge to the circular orbit quickly and stably. After that, It can move around the central planet just by the gravity.
+
 
 ![](images/a6-direction.gif)
 *Figure 8: The trajectory optimization problem with and without an added gravity field disturbance. The purple point is the target point and the green ball is the added disturbance planet.
