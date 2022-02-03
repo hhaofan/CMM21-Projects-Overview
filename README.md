@@ -19,15 +19,15 @@ In this task, both forward and inverse problem is simulated with an elastic bar.
  By formulating the problem as a constrained optimization problem, and using different numerical solutions to find the numerical solution, this problem can be solved.
 
 ![](images/a4-fem.gif)
-*Figure 3: The forward fem simulation*
+*Figure 1: The forward fem simulation*
 
 ![](images/a4-manip.gif)
-*Figure 4: The inverse manipulation problem. After adding the regularizer term (click obj.Question_12), it will converge very slowly to the optimal condition.*
+*Figure 2: The inverse manipulation problem. After adding the regularizer term (click obj.Question_12), it will converge very slowly to the optimal condition.*
 
 It is noticed that at the end of the inverse problem demo, the end of the bar is in some wired position, this can be attributed to the fact of the nonconvexiety of the problem and the property of the optimization method. By adding a regularizer, this problem can be addressed, in spite of slowly processing. The final outcome looks like this.
 
 ![](images/a4-final.png)
-*Figure 5: The final state of inverse problem*
+*Figure 3: The final state of inverse problem*
 
 ## 2. Rigid body dynamics
 ### 2.1 Basic features 
@@ -39,13 +39,13 @@ This task attains the feature of rigid body dynamics simulation. Under these thr
 
 As you can see in the demo below, the simulation of the dynamics and kinematics process is very well and stable.
 ![](images/a5-demo1.gif)
-*Figure 6: Dynamics of the cube under different situations: 1. Projectile, 2. Single Spring, 3. Double Springs*
+*Figure 4: Dynamics of the cube under different situations: 1. Projectile, 2. Single Spring, 3. Double Springs*
 
 ### 2.2 Contact simulation
 After finishing the basic dynamics simulation, the basics contact simulation is also achieved. By using impluse into integration, setting a criteria of contacting, and setting a restitution coefficient epsilon, the dynamics with contact is simulated. It is noted that the friction is not considered in this task.
 
 ![](images/a5-demo2.gif)
-*Figure 7: Dynamics simulation with contact under different epsilon of restitution coefficient*
+*Figure 5: Dynamics simulation with contact under different epsilon of restitution coefficient*
 
 ## 3. Trajectory Optimization
 In this task, a trajectory optimization problem is attained. To be specific, the following two features are attained.
@@ -54,7 +54,10 @@ In this task, a trajectory optimization problem is attained. To be specific, the
 
 
 ![](images/a6-direction.gif)
-*Figure 8: The trajectory optimization problem with and without an added gravity field disturbance. The purple point is the target point and the green ball is the added disturbance planet.
+*Figure 6: The trajectory optimization problem with and without an added gravity field disturbance. The purple point is the target point and the green ball is the added disturbance planet.
+
+![](images/a6-circular.gif)
+*Figure 7: The trajectory optimization problem to let a satellite fly around a planet just by the planet's gravity 
 
 ## 4.  Boids simulation
 In this task, I simulate the Boids(Bird-oid objects) system with a self-written GUI interface using ImGui package. The main parts realized in this task are: 
@@ -63,9 +66,8 @@ In this task, I simulate the Boids(Bird-oid objects) system with a self-written 
 
 Here is the demo.
 ![](images/a3-intergrationmethods.gif)
-*Figure 1: Different intergration methods simulations, using circular motion as an example*
+*Figure 8: Different intergration methods simulations, using circular motion as an example*
 
 ![](images/a3-flocking.gif)
-*Figure 2: Flocking-feature simulations with a leading bird. Simulated with basic PI controller*
-![](images/a6-circular.gif)
-*Figure 9: The trajectory optimization problem to let a satellite fly around a planet just by the planet's gravity 
+*Figure 9: Flocking-feature simulations with a leading bird. Simulated with basic PI controller*
+
